@@ -1,15 +1,12 @@
 <template>
-    <div>Show</div>
-    <Link href="/">Main Page</Link>
-  </template>
+    <div>Index</div>
+    <Link href="/hello">Show Page</Link>
+    <div>
+      The message is {{ message }}
+    </div>
+</template>
   
-  <script setup>
-     import { Link } from '@inertiajs/inertia-vue3'
-  </script>
-  
-  <script>
-    import MainLayout from '../../Layouts/MainLayout.vue';
-    export default {
-        layout: MainLayout
-    }
-  </script>
+<script setup>
+  import { Link } from '@inertiajs/inertia-vue3'
+  defineProps({ message: String })
+</script>
