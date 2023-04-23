@@ -19,7 +19,7 @@ class ListingFactory extends Factory
         return [
             'beds' => fake()->numberBetween(1, 7),
             'baths' => fake()->numberBetween(1, 7),
-            'area' => fake()->numberBetween(1, 400),
+            'area' => fake()->numberBetween(1, 500),
             'city' => fake()->city(),
             'code' => fake()->postcode(),
             'street' => fake()->streetName(),
